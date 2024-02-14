@@ -1,6 +1,6 @@
 import "../scss/App.scss";
 import CharacterList from "./CharacterList";
-import Filters from "./Filter";
+import Filters from "./filters/Filters";
 
 function App() {
   return (
@@ -8,10 +8,11 @@ function App() {
       <header className="title">
         <h1>Harry Potter</h1>
       </header>
-      <main>
+      <main className="main" >
         <Filters />
         <CharacterList />
       </main>
+      <footer className="footer" ><span>@copy; Adalab 2024</span></footer>
     </div>
   );
 }

@@ -1,14 +1,7 @@
-function Filters() {
+function FilterByHouse() {
 
   return (
-    <form className="main__form">
-    <label htmlFor="text">Busca por personaje</label>
-    <input
-      className="main__form--filter"
-      type="text"
-      name="text"
-      id="text"
-    />
+    <div>
     <label htmlFor="house">
       Selecciona la casa
       <select>
@@ -18,8 +11,8 @@ function Filters() {
         <option value="Slytherin">Slytherin</option>
       </select>
     </label>
-  </form>
+    </div>
   );
 }
 
-export default Filters;
+export default FilterByHouse;
