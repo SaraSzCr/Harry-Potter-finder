@@ -1,8 +1,17 @@
+import { useState, useEffect } from "react";
 import "../scss/App.scss";
 import CharacterList from "./CharacterList";
 import Filters from "./filters/Filters";
+import DataCharacters from "../data/characters.json";
 
 function App() {
+const [characters] = useState(DataCharacters);
+
+useEffect( () => {
+  
+
+},[])
+
   return (
     <div>
       <header className="title">
@@ -12,7 +21,7 @@ function App() {
         <Filters />
         <CharacterList />
       </main>
-      <footer className="footer" ><span>@copy; Adalab 2024</span></footer>
+      <footer className="footer" ><span>@copy; Adalabers 2024</span></footer>
     </div>
   );
 }
