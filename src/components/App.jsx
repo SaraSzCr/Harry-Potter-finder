@@ -2,26 +2,30 @@ import { useState, useEffect } from "react";
 import "../scss/App.scss";
 import CharacterList from "./CharacterList";
 import Filters from "./filters/Filters";
-import DataCharacters from "../data/characters.json";
+
+import { fetchCharacters } from "../services/fetch";
 
 function App() {
-const [characters] = useState(DataCharacters);
+  const [characters, setCharacters] = useState("");
 
-useEffect( () => {
-  
-
-},[])
+  useEffect(() => {
+    fetchCharacters().then((responseData) => {
+      setCharacters(responseData);
+    });
+  }, []);
 
   return (
     <div>
       <header className="title">
         <h1>Harry Potter</h1>
       </header>
-      <main className="main" >
+      <main className="main">
         <Filters />
-        <CharacterList />
+        <CharacterList/>
       </main>
-      <footer className="footer" ><span>@copy; Adalabers 2024</span></footer>
+      <footer className="footer">
+        <span>@copy; Adalabers 2024</span>
+      </footer>
     </div>
   );
 }

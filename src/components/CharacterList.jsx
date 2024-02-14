@@ -1,6 +1,8 @@
+import PropTypes from "prop-types";
 import CharacterCard from "./CharacterCard";
 
-function CharacterList() {
+
+function CharacterList({}) {
 
   return (
     <ul className="main__list">
@@ -10,5 +12,7 @@ function CharacterList() {
   </ul>
   );
 }
-
+CharacterList.propTypes = {
+  characters: PropTypes.string,
+};
 export default CharacterList;
