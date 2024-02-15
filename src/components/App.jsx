@@ -6,7 +6,7 @@ import Filters from "./filters/Filters";
 import { fetchCharacters } from "../services/fetch";
 
 function App() {
-  const [characters, setCharacters] = useState("");
+  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     fetchCharacters().then((responseData) => {
@@ -21,7 +21,7 @@ function App() {
       </header>
       <main className="main">
         <Filters />
-        <CharacterList/>
+        <CharacterList characters={characters}/>
       </main>
       <footer className="footer">
         <span>@copy; Adalabers 2024</span>
