@@ -2,14 +2,13 @@ import PropTypes from "prop-types";
 import CharacterCard from "./CharacterCard";
 
 function CharacterList({ characters }) {
-  const renderCharacters = characters.map((character,idx) => {
-    return(
-    <li key={idx} className="main__list--listItem">
-      <CharacterCard img={character.image} name={character.name} species={character.species} />
-    </li>
-    )
-});
-
+  const renderCharacters = characters.map((character) => {
+    return (
+      <li key={character.id} className="main__list--listItem">
+        <CharacterCard character={character} />
+      </li>
+    );
+  });
 
   return <ul className="main__list">{renderCharacters}</ul>;
 }

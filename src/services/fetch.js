@@ -7,6 +7,7 @@ export function fetchCharacters () {
   .then(updatedData =>{
     return updatedData.map((eachObj) => {
       return{
+        id: eachObj.id,
         name: eachObj.name,
         photo: eachObj.image,
         species: eachObj.species,
