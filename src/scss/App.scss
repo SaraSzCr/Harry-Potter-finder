@@ -1,7 +1,8 @@
 @import "core/reset";
+@import "core/variables";
 
 .main-container {
-  background-color: #5d0303;
+  background-color: $color-background;
 }
 
 .header {
@@ -11,7 +12,7 @@
   justify-content: center;
 
   &__title {
-    color: rgb(237, 133, 59);
+    color: $main-color;
     font-size: 70px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-style: italic;
@@ -20,11 +21,10 @@
 
 .main {
   margin-top: 20px;
-  border-top: solid rgb(227, 221, 221);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__form {
     display: flex;
@@ -34,7 +34,8 @@
     justify-content: center;
 
     &--container {
-      color: rgb(237, 133, 59);
+      color: $main-color;
+      font-family: $main-fontStyle;
       display: flex;
       gap: 30px;
 
@@ -52,14 +53,14 @@
     justify-content: center;
 
     &--listItem {
-      border: solid rgb(249, 194, 194);
+      border: solid $other-color;
       margin-top: 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 4px;
-      background-color: #9f0404;
+      background-color: $card-background;
       width: 270px;
 
       &--image {
@@ -68,12 +69,24 @@
       }
 
       &--name {
-        color: rgb(237, 133, 59);
+        color:$color-name ;
+        font-family: $main-fontStyle
+        
       }
 
       &--species {
-        color: rgb(237, 133, 59);
-      }
+        color: $other-color;
+        font-family: $main-fontStyle
     }
   }
+}
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $main-color ;
+  font-size: 20px;
 }
