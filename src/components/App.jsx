@@ -15,9 +15,9 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <header className="title">
-        <h1>Harry Potter</h1>
+    <div className="main-container">
+      <header className="header">
+        <h1 className="header__title">Harry Potter</h1>
       </header>
       <main className="main">
         <Filters />

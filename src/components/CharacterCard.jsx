@@ -8,7 +8,7 @@ function CharacterCard({character, showImg}) {
         alt="Harry Potter"
       />
       <h3 className="main__list--listItem--name">{character.name}</h3>
-      <p className="main__list--listItem--specie">{character.species}</p>
+      <p className="main__list--listItem--species">{character.species}</p>
     </>
   );
 }
