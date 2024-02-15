@@ -9,7 +9,7 @@ export function fetchCharacters () {
       return{
         id: eachObj.id,
         name: eachObj.name,
-        photo: eachObj.image,
+        image: eachObj.image,
         species: eachObj.species,
         house: eachObj.house,
         gender:eachObj.gender,

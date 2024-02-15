@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-function CharacterCard({character}) {
+function CharacterCard({character, showImg}) {
   return (
     <>
       <img
         className="main__list--listItem--image"
-        src={character.image}
+        src={showImg}
         alt="Harry Potter"
       />
       <h3 className="main__list--listItem--name">{character.name}</h3>
@@ -14,6 +14,7 @@ function CharacterCard({character}) {
 }
 
 CharacterCard.propTypes = {
-  character: PropTypes.object.isRequired
+  character: PropTypes.object.isRequired,
+  showImg: PropTypes.string.isRequired,
 };
 export default CharacterCard;
