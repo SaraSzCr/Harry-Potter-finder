@@ -9,6 +9,16 @@ import { fetchCharacters } from "../services/fetch";
 function App() {
   const [characters, setCharacters] = useState([]);
 
+  const [filterName, setFilterName] = useState("");
+
+  const handleFilterByName = (inputValue) => {
+    setFilterName(inputValue)
+    
+    console.log(inputValue);
+  };
+
+  const filteredName = characters.filter( character => character.name.toLowerCase().includes(filterName.toLowerCase()) );
+
   //ls.get ("project", [])
 
   useEffect(() => {
@@ -24,8 +34,8 @@ function App() {
         <h1 className="header__title">Harry Potter</h1>
       </header>
       <main className="main">
-        <Filters />
-        <CharacterList characters={characters}/>
+        <Filters handleFilterByName={handleFilterByName} filterName={filterName} />
+        <CharacterList characters={filteredName}/>
       </main>
       <footer className="footer">
         <span>@copy; Adalabers 2024</span>
