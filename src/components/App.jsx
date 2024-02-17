@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import "../scss/App.scss";
-import CharacterList from "./CharacterList";
+import CharacterList from "./characters/CharacterList";
 import Filters from "./filters/Filters";
-
 import { fetchCharacters } from "../services/fetch";
+import { Route, Routes } from "react-router-dom";
+import CharacterDetails from "./characters/CharacterDetails";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -32,19 +33,38 @@ function App() {
     });
   }, [filterHouse]);
 
+  const findCharacter = (id) => {
+    return characters.find((character) => character.id === id);
+  };
+
   return (
     <div className="main-container">
       <header className="header">
         <h1 className="header__title">Harry Potter</h1>
       </header>
+
       <main className="main">
-        <Filters
-          handleFilterByName={handleFilterByName}
-          filterName={filterName}
-          handleFilterByHouse={handleFilterByHouse}
-          filterHouse={filterHouse}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              {" "}
+              <Filters
+                handleFilterByName={handleFilterByName}
+                filterName={filterName}
+                handleFilterByHouse={handleFilterByHouse}
+                filterHouse={filterHouse}
+              />{" "}
+              <CharacterList characters={filteredName} />{" "}
+            </>
+          }
         />
-        <CharacterList characters={filteredName} />
+        <Route
+          path="/character/:id"
+          element={<CharacterDetails findCharacter={findCharacter} />}
+        />
+      </Routes>
       </main>
       <footer className="footer">
         <span>@copy; Adalabers 2024</span>
