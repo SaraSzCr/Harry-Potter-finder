@@ -18,6 +18,7 @@ function App() {
 
     console.log(inputValue);
   };
+  // const inputError= characters.inputValue ? characters.inputValue : "No hay ningun personaje con ese nombre"
 
   const handleFilterByHouse = (selectValue) => {
     setFilterHouse(selectValue);
@@ -44,27 +45,32 @@ function App() {
       </header>
 
       <main className="main">
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              {" "}
-              <Filters
-                handleFilterByName={handleFilterByName}
-                filterName={filterName}
-                handleFilterByHouse={handleFilterByHouse}
-                filterHouse={filterHouse}
-              />{" "}
-              <CharacterList characters={filteredName} />{" "}
-            </>
-          }
-        />
-        <Route
-          path="/character/:id"
-          element={<CharacterDetails findCharacter={findCharacter} />}
-        />
-      </Routes>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Filters
+                  handleFilterByName={handleFilterByName}
+                  filterName={filterName}
+                  handleFilterByHouse={handleFilterByHouse}
+                  filterHouse={filterHouse}
+                />
+                <section>
+                  {filteredName.length > 0 ? (
+                    <CharacterList characters={filteredName} />
+                  ) : (
+                    "No hay ningun personaje con ese nombre"
+                  )}
+                </section>
+              </>
+            }
+          />
+          <Route
+            path="/character/:id"
+            element={<CharacterDetails findCharacter={findCharacter} />}
+          />
+        </Routes>
       </main>
       <footer className="footer">
         <span>@copy; Adalabers 2024</span>
