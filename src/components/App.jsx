@@ -11,12 +11,19 @@ function App() {
 
   const [filterName, setFilterName] = useState("");
 
+  const [filterHouse, setFilterHouse] = useState ("Gryffindor")
+
   const handleFilterByName = (inputValue) => {
     setFilterName(inputValue)
     
     console.log(inputValue);
   };
 
+  const handleFilterByHouse = (selectValue) => {
+    setFilterHouse(selectValue)
+    console.log(selectValue);
+
+  }
   const filteredName = characters.filter( character => character.name.toLowerCase().includes(filterName.toLowerCase()) );
 
   //ls.get ("project", [])
@@ -34,7 +41,7 @@ function App() {
         <h1 className="header__title">Harry Potter</h1>
       </header>
       <main className="main">
-        <Filters handleFilterByName={handleFilterByName} filterName={filterName} />
+        <Filters handleFilterByName={handleFilterByName} filterName={filterName} handleFilterByHouse={handleFilterByHouse} filterHouse={filterHouse} />
         <CharacterList characters={filteredName}/>
       </main>
       <footer className="footer">
