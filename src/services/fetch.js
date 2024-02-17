@@ -1,8 +1,7 @@
 
+export function fetchCharacters (filterHouse) {
 
-export function fetchCharacters () {
-
-  return fetch('https://hp-api.onrender.com/api/characters/house/gryffindor')
+  return fetch(`https://hp-api.onrender.com/api/characters/house/${filterHouse}`)
   .then(response => response.json())
   .then(updatedData =>{
     return updatedData.map((eachObj) => {

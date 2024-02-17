@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function FilterByHouse(handleFilterByHouse, filterHouse) {
+function FilterByHouse({handleFilterByHouse, filterHouse}) {
   const handleSelectHouse = (event) => {
     handleFilterByHouse(event.currentTarget.value);
   };
