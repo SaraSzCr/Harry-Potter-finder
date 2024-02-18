@@ -18,7 +18,7 @@ function App() {
 
     console.log(inputValue);
   };
-  // const inputError= characters.inputValue ? characters.inputValue : "No hay ningun personaje con ese nombre"
+  
 
   const handleFilterByHouse = (selectValue) => {
     setFilterHouse(selectValue);

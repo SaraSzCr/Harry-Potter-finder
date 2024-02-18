@@ -12,7 +12,7 @@ export function fetchCharacters (filterHouse) {
         species: eachObj.species,
         house: eachObj.house,
         gender:eachObj.gender,
-        alive:eachObj.status
+        alive:eachObj.alive,
 
       }
     })
