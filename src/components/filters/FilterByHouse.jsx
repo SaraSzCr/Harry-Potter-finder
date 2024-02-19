@@ -8,22 +8,13 @@ function FilterByHouse({handleFilterByHouse, filterHouse}) {
     <div className="main__form--container">
       <label className="main__form--container--label" htmlFor="house">
         Selecciona la casa
-      </label>
-<<<<<<< HEAD
-      <select>
+        <select>
           <option value="Gryffindor">Gryffindor</option>
           <option value="Hufflepuff">Hufflepuff</option>
           <option value="Ravenclaw">Ravenclaw</option>
           <option value="Slytherin">Slytherin</option>
         </select>
-=======
-      <select onChange={handleSelectHouse} name="house" id="house" value={filterHouse}>
-        <option value="Gryffindor">Gryffindor</option>
-        <option value="Hufflepuff">Hufflepuff</option>
-        <option value="Ravenclaw">Ravenclaw</option>
-        <option value="Slytherin">Slytherin</option>
-      </select>
->>>>>>> main
+      </label>
     </div>
   );
 }
