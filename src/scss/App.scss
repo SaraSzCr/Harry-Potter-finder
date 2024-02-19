@@ -7,7 +7,7 @@
 }
 
 .header {
-  margin-top: 20px;
+  padding: 20px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,9 +62,8 @@
         justify-content: center;
       }
       &--btn {
-        height: 35px;
-        width: 120px;
-        margin-left: 50px;
+        padding: 10px 24px;
+        margin: 0px auto;
         box-shadow: 0px 0px 35px 4px red;
         border: 3px solid rgb(33, 0, 0);
         background-color: brown;
@@ -97,6 +96,7 @@
 
       &--image {
         width: 260px;
+        padding: 5px;
         height: 300px;
         object-fit: contain;
       }
@@ -108,6 +108,7 @@
       }
 
       &--species {
+        margin-bottom: 15px;
         color: $other-color;
         font-family: $main-fontStyle;
       }
@@ -134,14 +135,19 @@
 
 .link {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
 .linkCard {
+  padding: 5px;
+  margin-bottom: 10px;
   text-decoration: none;
   color: $color-link;
   border: solid 1px rgb(227, 158, 20);
   border-radius: 10px;
-  padding: 5px;
 }
 
 .linkReturn {
@@ -154,10 +160,24 @@
 }
 
 .footer {
-  margin-top: 40px;
+  padding: 100px 0px 30px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: $main-color;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Tablet */
+}
+@media screen and (max-width: 480px) {
+  /* Mobile */
+
+  .main__form--container {
+    flex-direction: column;
+  }
+  .main__form--container--label {
+    justify-content: flex-start;
+  }
 }
