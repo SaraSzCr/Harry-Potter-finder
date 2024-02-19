@@ -38,7 +38,6 @@
       font-family: $main-fontStyle;
       display: flex;
       gap: 30px;
-      
 
       &--label {
         font-size: 20px;
@@ -48,24 +47,20 @@
         border: 3px solid rgb(79, 2, 2);
         border-radius: 10px;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
 
-      &--filter {
-        height: 40px;
-        width: 200px;
-        box-shadow: 0px 0px 35px 4px red;
-        border: 3px solid rgb(79, 2, 2);
-        border-radius: 10px;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-
-       
+        &--filter {
+          height: 40px;
+          width: 200px;
+          box-shadow: 0px 0px 35px 4px red;
+          border: 3px solid rgb(79, 2, 2);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
-
-     
     }
   }
 
@@ -93,17 +88,50 @@
       }
 
       &--name {
-        color:$color-name ;
-        font-family: $main-fontStyle
-        
+        color: $color-name;
+        font-family: $main-fontStyle;
+        font-size: 20px;
       }
 
       &--species {
         color: $other-color;
-        font-family: $main-fontStyle
+        font-family: $main-fontStyle;
+      }
     }
   }
 }
+.cardContainer {
+  background-color: rgb(139, 2, 24);
+}
+
+.sectionText {
+  color: $color-link;
+  font-family: $main-fontStyle;
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.linkCard {
+  text-decoration: none;
+  color: $color-link;
+  // color: rgb(83, 2, 2);
+  border: solid 1px rgb(227, 158, 20);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.linkReturn {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: $main-fontStyle;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
@@ -111,6 +139,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $main-color ;
+  color: $main-color;
   font-size: 20px;
 }

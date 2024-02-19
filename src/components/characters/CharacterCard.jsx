@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 function CharacterCard({character, showImg}) {
   return (
-    <Link to={"/character/" + character.id}>
+    <Link className="link" to={"/character/" + character.id}>
       <>
         <img
           className="main__list--listItem--image"

@@ -56,7 +56,7 @@ function App() {
                   handleFilterByHouse={handleFilterByHouse}
                   filterHouse={filterHouse}
                 />
-                <section>
+                <section className="sectionText">
                   {filteredName.length > 0 ? (
                     <CharacterList characters={filteredName} />
                   ) : (

@@ -10,7 +10,7 @@ function CharacterDetails({ findCharacter }) {
   console.log(character);
 
   return (
-    <div>
+    <div className="cardContainer" >
       <img
         className="main__list--listItem--image"
         src={character.image}
@@ -29,8 +29,9 @@ function CharacterDetails({ findCharacter }) {
         <p className="main__list--listItem--name">
           <strong>Specie: </strong> {character.species}</p>
       </div>
-      <Link to="/">Volver</Link>
-    </div>
+      <div className="linkReturn" ><Link className="linkCard" to="/">Volver</Link></div>
+      </div>
+
   );
 }
 
