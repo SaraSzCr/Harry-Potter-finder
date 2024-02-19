@@ -14,7 +14,7 @@ function App() {
   const [filterHouse, setFilterHouse] = useState("Gryffindor");
 
   
-  const handleResetBtn = (submit) => {
+  const handleResetBtn = () => {
     setCharacters ("")
   }
 
