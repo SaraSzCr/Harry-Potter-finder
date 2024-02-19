@@ -13,6 +13,11 @@ function App() {
 
   const [filterHouse, setFilterHouse] = useState("Gryffindor");
 
+  
+  const handleResetBtn = (submit) => {
+    setCharacters ("")
+  }
+
   const handleFilterByName = (inputValue) => {
     setFilterName(inputValue);
 
@@ -42,6 +47,7 @@ function App() {
     <div className="main-container">
       <header className="header">
         <h1 className="header__title">Harry Potter</h1>
+
       </header>
 
       <main className="main">
@@ -55,6 +61,8 @@ function App() {
                   filterName={filterName}
                   handleFilterByHouse={handleFilterByHouse}
                   filterHouse={filterHouse}
+                  handleResetBtn={handleResetBtn}
+                  
                 />
                 <section className="sectionText">
                   {filteredName.length > 0 ? (
@@ -73,7 +81,7 @@ function App() {
         </Routes>
       </main>
       <footer className="footer">
-        <span>@copy; Adalabers 2024</span>
+        <span>&copy; Adalabers 2024</span>
       </footer>
     </div>
   );

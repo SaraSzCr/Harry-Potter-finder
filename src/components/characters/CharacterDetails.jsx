@@ -16,7 +16,7 @@ function CharacterDetails({ findCharacter }) {
         src={character.image}
         alt="Harry Potter"
       />
-      <div>
+      <div className="cardDetails">
         <h3 className="main__list--listItem--name">{character.name}</h3>
         <p className="main__list--listItem--name">
           <strong>Status: </strong>
