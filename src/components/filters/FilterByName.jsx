@@ -11,7 +11,7 @@ function FiltersByName({ handleFilterByName, filterName }) {
         Busca por personaje
       </label>
       <input
-        className="main__form--filter"
+        className="main__form--container--filter"
         type="text"
         name="text"
         id="text"

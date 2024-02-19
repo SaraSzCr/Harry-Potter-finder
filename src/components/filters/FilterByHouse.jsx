@@ -9,7 +9,7 @@ function FilterByHouse({handleFilterByHouse, filterHouse}) {
       <label className="main__form--container--label" htmlFor="house">
         Selecciona la casa
       </label>
-      <select onChange={handleSelectHouse} name="house" id="house" value={filterHouse}>
+      <select className="main__form--container--filter" onChange={handleSelectHouse} name="house" id="house" value={filterHouse}>
         <option value="Gryffindor">Gryffindor</option>
         <option value="Hufflepuff">Hufflepuff</option>
         <option value="Ravenclaw">Ravenclaw</option>
