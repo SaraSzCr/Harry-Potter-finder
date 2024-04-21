@@ -36,7 +36,7 @@ _Ejecuta los siguientes comandos en la Terminal_
 1. **Clona el repositorio**:
 
    ````
-   git clone https://github.com/SaraSzCr/Harry-Potter-finder.git ```
+ git clone https://github.com/SaraSzCr/Harry-Potter-finder.git ```
 
 2. Instala las **dependencias locales**:
 
@@ -56,5 +56,5 @@ Este comando: **Abre automáticamente una ventana en el navegador y muestra la 
 
 Sara Sánchez Crespo
 [Github] (https://github.com/SaraSzCr)
-[Linkedin] (http://linkedin.com/in/sara-sanchez-crespo-b0538029a)
+[Linkedin] (www.linkedin.com/in/sara-sanchez-crespo)
 [email] (scresposara@gmail.com)
