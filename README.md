@@ -35,8 +35,8 @@ _Ejecuta los siguientes comandos en la Terminal_
 
 1. **Clona el repositorio**:
 
-```
- git clone https://github.com/SaraSzCr/Harry-Potter-finder.git ```
+   ```
+git clone https://github.com/SaraSzCr/Harry-Potter-finder.git ```
 
 2. Instala las **dependencias locales**:
 
