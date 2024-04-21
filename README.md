@@ -1,13 +1,12 @@
-# Evaluación final Modulo 3 Adalab 💻
+# Harry Potter Finder 🔍
 
-En este ejercicio se demuestran los conocimientos adquiridos durante el tercer módulo del Bootcamp de Programación Web de Adalab.[Adalab](https://adalab.es)
-El ejercicio consiste en desarrollar una aplicación web partiendo de un diseño predeterminado como guía.
+Este proyecto consiste en desarrollar una aplicación web partiendo de un diseño predeterminado como guía proporcionado por [Adalab](https://adalab.es)
 La aplicación web contiene un listado de personajes de Harry Potter que podemos filtrar por el nombre del personaje o buscarlos por casa, de forma que al seleccionar una casa queden en la interfaz solo los personajes cuya casa es la seleccionada.
 Además, al hacer clic sobre la tarjeta de un personaje, su información aparecerá a pantalla completa.
 
-Para realizar el ejercicio he utilizado la plantilla de proyecto React Starter Kit de Adalab creada en node y vite y la API de la página HP-API (https://hp-api.onrender.com/) proporcionados por Adalab.
+Se utiliza el método *fetch* para realizar peticiones a la **API** de la página HP-API (https://hp-api.onrender.com/) que nos proporciona información sobre los personajes de Harry Potter.
 
-En este ejercicio he utilizado las siguientes tecnologías:
+### Tecnologías utilizadas 🛠️
 
 - HTML
 - Sass
@@ -22,33 +21,42 @@ En este ejercicio he utilizado las siguientes tecnologías:
 
 ### Link de GitHub Pages 🔗
 
-https://beta.adalab.es/modulo-3-evaluacion-final-SaraSzCr/
+http://saraszcr.github.io/Harry-Potter-finder/
 
-## Guía de incio rápido 📖
+## Guía rápida de inicio 🚀
 
 Esta guía te permite tener una copia del ejercicio y ejecutarlo
 
-**Nota** Necesitas tener instalado [Node JS] (https://nodejs.org/)
+**NOTA** Necesitas tener instalado [Node JS] (https://nodejs.org/)
 
-### Pasos para ejecutar el ejercicio 🐾
+### Instalación y ejecución🐾
 
-Ejecuta estos comandos en la Terminal:
+_Ejecuta los siguientes comandos en la Terminal_
 
 1. **Clona el repositorio**:
-   https://github.com/Adalab/modulo-3-evaluacion-final-SaraSzCr.git
 
-2. **Instala las _dependecias locales_**:
-   `npm install`
 
-3. **Arranca el proyecto**
-   `npm run dev`
+   ```
+ git clone https://github.com/SaraSzCr/Harry-Potter-finder.git
+```
 
-Este comando ejecuta el entorno de desarrollo y muestra la página web en una pestaña del navegador.
+2. Instala las **dependencias locales**:
 
-## Autora 👩🏻‍💻
+```
+npm install
+```
+
+3. **Arranca el proyecto**:
+
+```
+npm run dev
+```
+
+Este comando: **Abre automáticamente una ventana en el navegador y muestra la página web**
+
+## Autora
 
 Sara Sánchez Crespo
-
 [Github] (https://github.com/SaraSzCr)
 [Linkedin] (http://linkedin.com/in/sara-sanchez-crespo-b0538029a)
 [email] (scresposara@gmail.com)
