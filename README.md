@@ -23,20 +23,20 @@ Se utiliza el método _fetch_ para realizar peticiones a la **API** de la págin
 
 http://saraszcr.github.io/Harry-Potter-finder/
 
-## Guía rápida de inicio 🚀
+git## Guía rápida de inicio 📖
 
 Esta guía te permite tener una copia del ejercicio y ejecutarlo
 
 **NOTA** Necesitas tener instalado [Node JS] (https://nodejs.org/)
 
-### Instalación y ejecución🐾
+### Instalación y ejecución 🚀
 
 _Ejecuta los siguientes comandos en la Terminal_
 
 1. **Clona el repositorio**:
-
 ```
- git clone https://github.com/SaraSzCr/Harry-Potter-finder.git ```
+ git clone https://github.com/SaraSzCr/Harry-Potter-finder.git 
+ ```
 
 2. Instala las **dependencias locales**:
 
@@ -52,7 +52,7 @@ npm run dev
 
 Este comando: **Abre automáticamente una ventana en el navegador y muestra la página web**
 
-## Autora 👩‍💻
+## Autora 👩🏻‍💻
 
 Sara Sánchez Crespo
 [Github] (https://github.com/SaraSzCr)
