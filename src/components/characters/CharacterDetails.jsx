@@ -13,7 +13,9 @@ function CharacterDetails({ findCharacter }) {
     <div className="cardContainer" >
       <img
         className="main__list--listItem--image"
-        src={character.image}
+        src={character.image
+          ? character.image
+          : "./images/mysterious-character.jpg"}
         alt="Harry Potter"
       />
       <div className="cardDetails">
