@@ -11,9 +11,7 @@ Se utiliza el método _fetch_ para realizar peticiones a la **API** de la págin
 - HTML
 - Sass
 - Nomenclatura BEM
-- Flexbox
-- CSS Grid.
-  para la maquetación de la página web
+- CSS (Flexbox, Grid)
 - JavaScript
 - React
 - React Router DOM
@@ -23,7 +21,7 @@ Se utiliza el método _fetch_ para realizar peticiones a la **API** de la págin
 
 http://saraszcr.github.io/Harry-Potter-finder/
 
-git## Guía rápida de inicio 📖
+### Guía rápida de inicio 📖
 
 Esta guía te permite tener una copia del ejercicio y ejecutarlo
 
