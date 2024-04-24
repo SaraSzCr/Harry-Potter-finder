@@ -168,6 +168,11 @@
   font-size: 20px;
 }
 
+.author{
+  color: $other-color;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1024px) {
   /* Tablet */
 }

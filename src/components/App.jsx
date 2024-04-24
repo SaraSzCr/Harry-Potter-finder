@@ -64,6 +64,13 @@ function App() {
                     "No hay ningun personaje con ese nombre"
                   )}
                 </section>
+                {/* <section className="sectionText">
+                  {findCharacter.id ? (
+                    <CharacterDetails findCharacter={findCharacter} />
+                  ) : (
+                    "No hay ningun personaje"
+                  )}
+                </section> */}
               </>
             }
           />
@@ -74,7 +81,15 @@ function App() {
         </Routes>
       </main>
       <footer className="footer">
-        <span>&copy; Adalabers 2024</span>
+
+      Creado por &copy;
+      <a
+        className="author"
+        href="https://github.com/SaraSzCr"
+        target="_blank"
+        rel="noopener noreferrer"
+        >  SaraSC</a>
+        {/* <span>&copy; Adalabers 2024</span> */}
       </footer>
     </div>
   );
