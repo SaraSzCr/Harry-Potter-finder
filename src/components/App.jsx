@@ -89,7 +89,6 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
         >  SaraSC</a>
-        {/* <span>&copy; Adalabers 2024</span> */}
       </footer>
     </div>
   );
