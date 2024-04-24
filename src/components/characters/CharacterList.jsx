@@ -13,8 +13,6 @@ function CharacterList({ characters }) {
     );
   });
 
-  // "https://via.placeholder.com/210x295/ffffff/666666/?text=HarryPotter"
-
   return <ul className="main__list">{renderCharacters}</ul>;
 }
 

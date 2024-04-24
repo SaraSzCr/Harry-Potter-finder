@@ -13,21 +13,16 @@ function App() {
 
   const [filterHouse, setFilterHouse] = useState("Gryffindor");
 
-  
   const handleResetBtn = () => {
-    setCharacters ("")
-  }
+    setCharacters("");
+  };
 
   const handleFilterByName = (inputValue) => {
     setFilterName(inputValue);
-
-    console.log(inputValue);
   };
-  
 
   const handleFilterByHouse = (selectValue) => {
     setFilterHouse(selectValue);
-    console.log(selectValue);
   };
   const filteredName = characters.filter((character) =>
     character.name.toLowerCase().includes(filterName.toLowerCase())
@@ -47,7 +42,6 @@ function App() {
     <div className="main-container">
       <header className="header">
         <h1 className="header__title">Harry Potter</h1>
-
       </header>
 
       <main className="main">
@@ -62,7 +56,6 @@ function App() {
                   handleFilterByHouse={handleFilterByHouse}
                   filterHouse={filterHouse}
                   handleResetBtn={handleResetBtn}
-                  
                 />
                 <section className="sectionText">
                   {filteredName.length > 0 ? (
