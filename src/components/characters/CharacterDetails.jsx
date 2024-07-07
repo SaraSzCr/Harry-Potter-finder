@@ -15,7 +15,7 @@ function CharacterDetails({ findCharacter }) {
         className="main__list--listItem--image"
         src={character.image
           ? character.image
-          : "./images/mysterious-character.jpg"}
+          : "./images/mysteriousCharacter.jpg"}
         alt="Harry Potter"
       />
       <div className="cardDetails">

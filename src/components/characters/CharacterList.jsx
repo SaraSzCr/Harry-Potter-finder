@@ -5,7 +5,9 @@ function CharacterList({ characters }) {
   const renderCharacters = characters.map((character) => {
     const showImg = character.image
       ? character.image
-      : "./images/mysterious-character.jpg";
+      : "./images/mysteriousCharacter.jpg";
+
+      // "./images/mysteriousCharacter.jpg"
     return (
       <li key={character.id} className="main__list--listItem">
         <CharacterCard character={character} showImg={showImg} />
